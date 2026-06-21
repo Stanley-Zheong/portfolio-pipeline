@@ -23,7 +23,7 @@ check () {
 
 echo "portfolio-to-issues preflight:"
 check "multica CLI"  "command -v multica"            "required" "this skill targets a Multica workspace; multica CLI must be on PATH"
-check "gstack"       "command -v gstack || command -v \$B" "optional" "install the gstack plugin in your runtime (review/office-hours/ceo/eng skills)"
+check "gstack"       "command -v gstack" "optional" "install the gstack plugin in your runtime (review/office-hours/ceo/eng skills)"
 check "gsd"          "command -v gsd || ls .claude/skills 2>/dev/null | grep -qi gsd" "optional" "install the gsd plugin in your runtime (gsd-spec/plan/phase skills)"
 
 echo ""
